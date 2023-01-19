@@ -1,7 +1,153 @@
-body {
-    max-width: 40em;
-    margin: 0 auto;
-    padding: 0 2rem;
+:root,
+input {
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  :root,
+  input {
+    font-family: "Inter var", sans-serif;
+    font-feature-settings: "ss02";
+  }
+}
 
-    font-family: Arial, Helvetica, sans-serif;
+/* Reset */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+picture {
+  max-width: 100%;
+}
+
+
+
+/* General Styles */
+
+body {
+  max-width: 42em;
+  margin: 0 auto;
+  padding: 0 2rem;
+  padding-bottom: 2rem;
+  font-size: 1.2em;
+  background-color: #736249;
+  /* background: url(background-typo.jpg);
+  background-size: cover; */
+
+  /* Grid Layout */
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "header  header"
+    "form form"
+    "img1  img2";
+  gap: 2rem;
+}
+
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+  grid-column: 1 / -1;
+  grid-area: header;
+}
+
+header h1 {
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+  font-size: 3em;
+  font-weight: 600;
+}
+
+header h2 {
+  font-size: 1em;
+}
+
+/* Le Formulaire */
+
+.formulaire {
+  grid-area: form;
+}
+
+.inf-form h4,
+.inf-rgpd {
+  color: #000;
+}
+
+.inf-main_2d9d746ed5f88a59e2ada7d9afd38bcf {
+  background-color: #FFF6E0;
+  margin: 0;
+}
+
+
+.inf-input input {
+  font-size: 1em;
+  border: 2px solid #ad936d;
+  border-radius: 4px;
+}
+
+/* Le Bouton */
+
+.inf-main_2d9d746ed5f88a59e2ada7d9afd38bcf .inf-submit input {
+  background: #D5CEFF;
+  border-radius: 20px;
+  padding: 5px 1em;
+  font-size: 1.5em;;
+  color: #000;
+}
+
+.inf-main_2d9d746ed5f88a59e2ada7d9afd38bcf .inf-submit input:hover {
+  background: #ac9eff;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Les images */
+
+.class-portrait {
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.class-portrait figcaption {
+
+  background-color: #99FD9D;
+  width: min(80%, 600px);
+  font-size: 0.8em;
+  padding: 1rem;
+  transform: translate(20px, -50%);
+}
+
+.galerie {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem; */
+}
+
+
+
+
+
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+
+
+
 }
