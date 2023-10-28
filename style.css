@@ -42,7 +42,7 @@ body {
   padding: 0 2rem;
   padding-bottom: 2rem;
   font-size: 1.2em;
-  background-color: #736249;
+  background-color: #FFF;
   /* background: url(background-typo.jpg);
   background-size: cover; */
 
@@ -90,21 +90,28 @@ header h2 {
 
 .archive-envois,
 .inf-main_2d9d746ed5f88a59e2ada7d9afd38bcf {
-  background-color: #FFF6E0;
+  background-color: #EEE;
   margin: 0;
 }
 
+/* temp */
+.archive-envois{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: space-between;
+}
 
 .inf-input input {
   font-size: 1em;
-  border: 2px solid #ad936d;
+  border: 2px solid #CCC;
   border-radius: 4px;
 }
 
 /* Le Bouton */
 
 .inf-main_2d9d746ed5f88a59e2ada7d9afd38bcf .inf-submit input {
-  background: #D5CEFF;
+  background: #CCC;
   border-radius: 20px;
   padding: 5px 1em;
   font-size: 1.5em;;
@@ -112,7 +119,7 @@ header h2 {
 }
 
 .inf-main_2d9d746ed5f88a59e2ada7d9afd38bcf .inf-submit input:hover {
-  background: #ac9eff;
+  background: #EEE;
   color: #fff;
   cursor: pointer;
 }
@@ -128,7 +135,7 @@ header h2 {
 
 .class-portrait figcaption {
 
-  background-color: #99FD9D;
+  background-color: #CCC;
   width: min(80%, 600px);
   font-size: 0.8em;
   padding: 1rem;
